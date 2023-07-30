@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Estilos Navegador*/
 .navegador {
     height: 50px;
     display: flex;
@@ -30,7 +31,7 @@
 
 .navegador ul li {
     list-style: none;
-   
+
 }
 
 .navegador ul li a {
@@ -39,7 +40,7 @@
     text-decoration: none;
 }
 
-.navegador ul li h3{
+.navegador ul li h3 {
     display: none;
 }
 
@@ -63,7 +64,7 @@
         padding: 20px;
     }
 
-    .navegador ul:hover{
+    .navegador ul:hover {
         left: 0;
         flex-direction: column;
     }
@@ -72,7 +73,7 @@
         color: black;
     }
 
-    .navegador ul li h3{
+    .navegador ul li h3 {
         display: block;
         color: black;
         margin: 0;
@@ -86,7 +87,42 @@
         order: -1;
     }
 
-    .navegador .fa-bars:hover + ul{
+    .navegador .fa-bars:hover+ul {
         left: 0;
     }
 }
+
+/* Fin estilos Navegador*/
+
+/*Estilos Footer*/
+footer {
+    border-top: black solid 2px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.fa-brands {
+    margin-left: 20px;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(82, 43, 43);
+}
+
+.fa-square-facebook {
+    color: blue;
+}
+
+.fa-square-whatsapp {
+    color: rgb(48, 167, 63);
+}
+
+.fa-square-instagram {
+   color: rgb(230, 17, 17);
+}
+
+/*Fin estilos Footer*/
