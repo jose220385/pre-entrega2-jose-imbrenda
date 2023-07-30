@@ -96,70 +96,73 @@
 /* Fin estilos Navegador*/
 
 /*Estilos Main index*/
-main{
+main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-.galeria{
+/*Estilos Galeria*/
+.galeria {
     margin-top: 15px;
     width: 85%;
     height: 600px;
     display: grid;
-    grid-template-columns: repeat(4,1fr)  ;
-    grid-template-rows:1fr 1fr 2fr 1fr  ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 1fr;
     grid-template-areas: "marron marron amarillo amarillo"
-                          "marron marron violeta  rojo"    
-                          "azul   bordo  fulem    rojo"
-                          "azul   verde  verde    verde" ;
+        "marron marron violeta  rojo"
+        "azul   bordo  fulem    rojo"
+        "azul   verde  verde    verde";
     column-gap: 15px;
     row-gap: 15px;
-    margin-bottom: 480px;
+    margin-bottom: 470px;
 }
 
-.bottega{
+.bottega {
     grid-area: marron;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.lise{
+.lise {
     grid-area: amarillo;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.taylor{
+.taylor {
     grid-area: violeta;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.mujer{
+.mujer {
     grid-area: rojo;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.moscow{
+.moscow {
     grid-area: azul;
     object-fit: cover;
     width: 100%;
     height: 80%;
 }
 
-.zapatos{
+.zapatos {
     grid-area: bordo;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.contenedor-fulem{
+.contenedor-fulem {
     grid-area: fulem;
     width: 100%;
     height: 100%;
@@ -170,14 +173,15 @@ main{
     gap: 10px;
     background-color: black;
     color: blanchedalmond;
+    padding: 10px;
 }
 
-.contenedor-fulem h1{
-    font-size: 80px;
+.contenedor-fulem h1 {
+    font-size: 75px;
 }
 
 
-.buenos-aires{
+.buenos-aires {
     grid-area: verde;
     object-fit: cover;
     width: 100%;
@@ -185,53 +189,88 @@ main{
 }
 
 @media(max-width:768px) {
-    .galeria{
-       
+    .galeria {
+
         height: 700px;
         display: grid;
-        grid-template-columns: repeat(3,1fr)  ;
-        grid-template-rows:2fr 1fr 1fr 1fr 1fr  ;
-        margin-bottom: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        margin-bottom: -70px;
+        margin-right: -15px;
     }
-    .bottega{
+
+    .bottega {
         display: none;
     }
-    .lise{
+
+    .lise {
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    .mujer{
+
+    .mujer {
         grid-column: 3/4;
         grid-row: 1/3;
     }
-    .moscow{
+
+    .moscow {
         grid-column: 1/2;
         grid-row: 2/5;
         height: 100%;
     }
-    .contenedor-fulem{
+
+    .contenedor-fulem {
         grid-column: 2/3;
         grid-row: 2/4;
     }
-    .contenedor-fulem h1{
-       font-size: 50px;
+
+    .contenedor-fulem h1 {
+        font-size: 50px;
     }
-    .zapatos{
+
+    .zapatos {
         grid-column: 3/4;
         grid-row: 3/5;
     }
 
-    .taylor{
+    .taylor {
         grid-column: 2/3;
         grid-row: 4/5;
     }
 
-    .buenos-aires{
+    .buenos-aires {
         grid-column: 1/4;
         grid-row: 5/6;
     }
 
 }
+
+/*Fin de estilos Galeria*/
+
+.carousel {
+    width: 85%;
+    margin-bottom: 15px;
+
+}
+
+.d-block {
+    object-fit: cover;
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .d-block {
+        height: 250px;
+    }
+
+    .carousel {
+        width: 82.5%;
+        margin-top: 20px;
+    }
+
+}
+
+
 
 /*Fin Estilos Main index*/
 
@@ -263,7 +302,7 @@ footer p {
 }
 
 .fa-square-instagram {
-   color: rgb(230, 17, 17);
+    color: rgb(230, 17, 17);
 }
 
 /*Fin estilos Footer*/
