@@ -1,0 +1,29 @@
+footer {
+    border-top: black solid 2px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    p {
+        text-align: center;
+    }
+}
+
+
+.fa-brands {
+    margin-left: 20px;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(82, 43, 43);
+}
+
+.fa-square-facebook {
+    color: blue;
+}
+
+.fa-square-whatsapp {
+    color: rgb(48, 167, 63);
+}
+
+.fa-square-instagram {
+    color: rgb(230, 17, 17);
+}

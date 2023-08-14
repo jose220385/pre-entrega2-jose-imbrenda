@@ -1,0 +1,133 @@
+.titulo{
+    height: 80px;
+    width: 87.5%;
+    background: rgb(110,110,124);
+    background: linear-gradient(135deg, rgba(110,110,124,1) 0%, rgba(21,23,55,1) 50%, rgba(0,0,0,1) 100%);
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: blanchedalmond;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        font-size: 40px;
+
+    }
+}
+
+.temporada{
+    height: 80px;
+    width: 87.5%;
+    background: rgb(110,110,124);
+    background: linear-gradient(135deg, rgba(110,110,124,1) 0%, rgba(21,23,55,1) 50%, rgba(0,0,0,1) 100%);
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: blanchedalmond;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+}
+
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-producto {
+    width: 250px;
+    height: 370px;
+    margin: 20px;
+    border: solid 2px black;
+    overflow: hidden;
+    img {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+
+body {
+    background: #eee;
+    font-family: 'Lily Script One';
+  }
+  /*Tarjeta Giratoria*/
+
+  .tarjeta-producto {
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    perspective: 500px;
+    box-sizing: border-box;
+  }
+  
+  .contenido-producto {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .tarjeta-producto:hover .contenido-producto {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .frente,
+  .atras {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: #202325;
+    text-align: center;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+  }
+
+  .frente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .atras {
+    background: rgb(66,73,78);
+    background: linear-gradient(75deg, rgba(66,73,78,1) 0%, rgba(32,35,37,1) 50%, rgba(20,22,24,1) 100%);
+    color: white;
+    transform: rotateY( 180deg );
+    img{
+        width: 100%;
+        height: 65%;
+        object-fit: cover;
+    }
+  }
+
+  .info-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    h3{
+        font-size: 25px;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+    p{
+        text-shadow: 1px 1px 2.5px rgb(0, 0, 0);  
+    }
+    button{
+        box-shadow: 2px 2px 5px rgb(47, 46, 48);
+        padding: 2px;
+    }
+}
+
+  /*Fin tarjeta giratoria*/

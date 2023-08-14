@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.65.1"
+  },
+  "name": "practica-grid---boostrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jose220385/pre-entrega2-jose-imbrenda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jose220385/pre-entrega2-jose-imbrenda/issues"
+  },
+  "homepage": "https://github.com/jose220385/pre-entrega2-jose-imbrenda#readme",
+  "description": ""
+}

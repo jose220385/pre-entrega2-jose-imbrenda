@@ -1,0 +1,17 @@
+
+.carousel {
+    width: 85%;
+    margin-bottom: 15px;
+    @media(max-width:768px) {
+        width: 82.5%;
+        margin-top: 20px;
+    }
+}
+
+.d-block {
+    object-fit: cover;
+    height: 500px;
+    @media(max-width:768px) {
+            height: 250px;
+        }
+}
