@@ -1,0 +1,42 @@
+.galeria-nosotros{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @media(max-width:768px) { 
+       margin-top: 50px; 
+       flex-wrap: wrap;
+    }
+    img{
+        height: 200px;
+        width:200px;
+    }
+}
+
+.desaparecer{
+    @media(max-width:768px) {   
+        display: none;
+     }
+}
+
+.descripcion-empresa{
+    width: 70%;
+    text-align: center;
+    margin: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    h1{
+        text-shadow: 2px 2px 4px rgb(126, 113, 113);
+    }
+    h2{
+        text-shadow: 2px 2px 4px rgb(126, 113, 113);
+    }
+    h3{
+        text-shadow: 2px 2px 4px rgb(126, 113, 113);
+    }
+    p{
+        text-shadow: 1px 1px 2px rgb(204, 203, 203); 
+    }
+}

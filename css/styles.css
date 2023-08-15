@@ -314,6 +314,10 @@ footer p {
   color: rgb(230, 17, 17);
 }
 
+.h1-productos {
+  display: none;
+}
+
 .titulo {
   height: 80px;
   width: 87.5%;
@@ -456,6 +460,20 @@ body {
   width: 70%;
   height: 480px;
 }
+@media (max-width: 768px) {
+  .contenedor-mapa iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .info-contacto {
   display: flex;
@@ -464,11 +482,21 @@ body {
   width: 30%;
   padding: 15px;
 }
+@media (max-width: 768px) {
+  .info-contacto {
+    width: 100%;
+  }
+}
 
 form {
   width: 30%;
   padding: 30px;
   border-radius: 4px;
+}
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+  }
 }
 form h2 {
   font-size: 22px;
@@ -505,6 +533,51 @@ p textarea {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.galeria-nosotros {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .galeria-nosotros {
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+}
+.galeria-nosotros img {
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .desaparecer {
+    display: none;
+  }
+}
+
+.descripcion-empresa {
+  width: 70%;
+  text-align: center;
+  margin: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.descripcion-empresa h1 {
+  text-shadow: 2px 2px 4px rgb(126, 113, 113);
+}
+.descripcion-empresa h2 {
+  text-shadow: 2px 2px 4px rgb(126, 113, 113);
+}
+.descripcion-empresa h3 {
+  text-shadow: 2px 2px 4px rgb(126, 113, 113);
+}
+.descripcion-empresa p {
+  text-shadow: 1px 1px 2px rgb(204, 203, 203);
 }
 
 /*# sourceMappingURL=styles.css.map */
