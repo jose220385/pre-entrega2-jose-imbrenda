@@ -1,0 +1,64 @@
+.contenedor-mapa{
+    width: 85%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    iframe{
+        width: 70%;
+        height: 480px;
+    }
+}
+
+.info-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    padding: 15px;
+}
+
+form{
+    width: 30%;
+    padding: 30px;
+    border-radius: 4px;
+    h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.campos{
+    width: 100%;
+    display: block;
+    padding: 3px;
+    margin: 5px;
+    margin-right: none;
+
+}
+
+#ingreso{
+    padding: none;
+    margin-bottom: 20px;
+}
+
+p textarea {
+    width: 100%;
+    margin: 5px;
+    height: 150px;
+}
+
+.boton {
+    width: 60px;
+    min-height: 30px;
+    margin-top: 10px;
+    margin-bottom: none;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+

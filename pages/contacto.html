@@ -30,7 +30,36 @@
         </nav>
     </header>
     <main>
-      
+        <div class="contenedor-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2809409553997!2d-58.52502988759921!3d-34.672858308064455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8eeb1d73e9f%3A0x393ad5413d0e9498!2sLas%20Heras%204000%2C%20Lomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1692055013826!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            <div class="info-contacto">
+                <h1>Donde nos encontramos...</h1>
+                <p>Estamos Ubicados en Las Heras 4000, Lomas del Mirador, Provincia de Buenos Aires.</p>
+                <p>A solo 5 cuadras de la Ruta Nacional Número 3 y 20 cuadras de la General Paz.</p>
+                <p>Nuestro Horario de Atencion es de Lunes a Viernes de 9 a 18 hs</p>
+                <p>Telefono de Contacto: 011-4484-7895</p>
+                <p>Mail: fulem@gmail.com</p>
+            </div>
+            <form id="form" action="enviarFormulario.php" method="POST">
+                <h2>Contáctenos</h2>
+                <div id="ingreso">
+                    <input class="campos" type="text" name="nombre" placeholder="Nombre" />
+                    <input class="campos" type="text" name="apellido" placeholder="Apellido" />
+                    <input class="campos" type="text" name="mail" placeholder="e-mail" />
+                    <input class="campos" type="text" name="tel" placeholder="Tel + cod de area" />
+                </div>
+                <p>
+                    <label for="motivo"> Mensaje: </label>
+                </p>
+                <p>
+                    <textarea name="motivo" id="" cols="30" rows="10"></textarea>
+                </p>
+                <div class="botones">
+                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" type="reset" value="Borrar">
+                </div>
+            </form>
+        </div> 
     </main>
     <footer class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus qui aut, sed tempora tempore dicta
