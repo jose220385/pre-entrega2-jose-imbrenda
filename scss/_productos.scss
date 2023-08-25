@@ -129,9 +129,14 @@ body {
         text-shadow: 1px 1px 2.5px rgb(0, 0, 0);  
     }
     button{
+        width: 60px;
         box-shadow: 2px 2px 5px rgb(47, 46, 48);
         padding: 2px;
+        background: linear-gradient(75deg, rgba(66,73,78,1) 0%, rgba(32,35,37,1) 50%, rgba(20,22,24,1) 100%);
+        color: white;
     }
 }
+
+
 
   /*Fin tarjeta giratoria*/

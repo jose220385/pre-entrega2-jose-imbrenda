@@ -17,10 +17,11 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  z-index: 1;
 }
 .navegador h3 {
   display: flex;
-  color: blanchedalmond;
+  color: white;
   margin-left: 100px;
   font-size: 25px;
 }
@@ -45,24 +46,25 @@ main {
     position: fixed;
     top: 0px;
     width: 200px;
-    background-color: blanchedalmond;
+    background: linear-gradient(45deg, rgb(153, 151, 182) 0%, rgb(75, 75, 135) 23%, rgb(0, 6, 8) 100%);
     padding: 20px;
   }
   .navegador ul:hover {
     left: 0;
     flex-direction: column;
+    z-index: 1;
   }
 }
 .navegador ul li {
   list-style: none;
 }
 .navegador ul li a {
-  color: blanchedalmond;
+  color: white;
   text-decoration: none;
 }
 @media (max-width: 768px) {
   .navegador ul li a {
-    color: black;
+    color: white;
   }
 }
 .navegador ul li h3 {
@@ -71,7 +73,8 @@ main {
 @media (max-width: 768px) {
   .navegador ul li h3 {
     display: block;
-    color: black;
+    color: white;
+    text-shadow: 2px 2px 1px black;
     margin: 0;
   }
 }
@@ -82,7 +85,7 @@ main {
   .navegador .fa-bars {
     display: block;
     font-size: 30px;
-    color: blanchedalmond;
+    color: white;
     margin: 10px;
     margin-left: 7.5%;
     order: -1;
@@ -95,10 +98,10 @@ main {
 .galeria {
   margin-top: 15px;
   width: 85%;
-  height: 800px;
+  /*height: 800px;*/
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr 1.5fr 1.5fr;
+  grid-template-rows: 250px 250px 280px 250px;
   grid-template-areas: "marron marron amarillo amarillo" "marron marron violeta  rojo" "azul   bordo  fulem    rojo" "azul   verde  verde    verde";
   column-gap: 15px;
   row-gap: 15px;
@@ -106,10 +109,9 @@ main {
 }
 @media (max-width: 768px) {
   .galeria {
-    height: 600px;
     display: grid;
     grid-template-columns: repeat(3, 0.7fr);
-    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.5fr;
+    grid-template-rows: 0.5fr 0.4fr 0.5fr 0.3fr 100px;
     margin-bottom: 10px;
     margin-right: -15px;
     column-gap: 10px;
@@ -224,8 +226,8 @@ main {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: black;
-  color: blanchedalmond;
+  background: linear-gradient(45deg, rgb(70, 68, 107) 0%, rgb(13, 13, 54) 23%, rgb(0, 6, 8) 100%);
+  color: white;
   padding: 10px;
 }
 .contenedor-fulem h1 {
@@ -233,7 +235,7 @@ main {
 }
 @media (max-width: 768px) {
   .contenedor-fulem h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .contenedor-fulem h2 {
@@ -241,7 +243,7 @@ main {
 }
 @media (max-width: 768px) {
   .contenedor-fulem h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -272,6 +274,7 @@ main {
   .carousel {
     width: 82.5%;
     margin-top: 20px;
+    z-index: -1;
   }
 }
 
@@ -286,14 +289,16 @@ main {
 }
 
 footer {
-  border-top: black solid 2px;
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   text-align: center;
+  padding: 15px;
 }
 footer p {
   text-align: center;
+  color: white;
 }
 
 .fa-brands {
@@ -443,8 +448,11 @@ body {
   text-shadow: 1px 1px 2.5px rgb(0, 0, 0);
 }
 .info-producto button {
+  width: 60px;
   box-shadow: 2px 2px 5px rgb(47, 46, 48);
   padding: 2px;
+  background: linear-gradient(75deg, rgb(66, 73, 78) 0%, rgb(32, 35, 37) 50%, rgb(20, 22, 24) 100%);
+  color: white;
 }
 
 /*Fin tarjeta giratoria*/
@@ -578,6 +586,34 @@ p textarea {
 }
 .descripcion-empresa p {
   text-shadow: 1px 1px 2px rgb(204, 203, 203);
+}
+
+.fa-whatsapp {
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: fixed;
+  right: 15px;
+  bottom: 70px;
+  background-color: green;
+  text-align: center;
+  align-content: center;
+  padding: 7.5px;
+  font-size: 40px;
+  z-index: 100;
+}
+.fa-whatsapp:hover {
+  box-shadow: -1px 0px 15px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 768px) {
+  .fa-whatsapp {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    padding: 5px;
+    bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

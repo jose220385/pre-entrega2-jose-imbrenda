@@ -1,11 +1,13 @@
 footer {
-    border-top: black solid 2px;
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
+    padding: 15px;
     p {
         text-align: center;
+        color: white;
     }
 }
 

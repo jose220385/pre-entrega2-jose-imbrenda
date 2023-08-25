@@ -1,0 +1,25 @@
+.fa-whatsapp {
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: fixed;
+    right: 15px;
+    bottom: 70px;
+    background-color: green;
+    text-align: center;
+    align-content: center;
+    padding: 7.5px;
+    font-size: 40px;
+    z-index: 100;
+    &:hover{
+        box-shadow: -1px 0px 15px rgba(0,0,0,0.8);
+    }
+    @media(max-width:768px) {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        padding: 5px;
+        bottom: 50px;
+    }
+}
