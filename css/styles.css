@@ -98,14 +98,12 @@ main {
 .galeria {
   margin-top: 15px;
   width: 85%;
-  /*height: 800px;*/
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px 250px 280px 250px;
   grid-template-areas: "marron marron amarillo amarillo" "marron marron violeta  rojo" "azul   bordo  fulem    rojo" "azul   verde  verde    verde";
   column-gap: 15px;
   row-gap: 15px;
-  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .galeria {
@@ -268,14 +266,20 @@ main {
 
 .p-index {
   font-size: 75px;
-  font-family: "Poppins", sans-serif, "Times New Roman", Times, serif;
   font-family: "Qwitcher Grypen", cursive;
   text-shadow: 2px 2px 5px rgba(243, 68, 234, 0.5);
+  width: 85%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .p-index {
+    font-size: 45px;
+  }
 }
 
 .carousel {
   width: 85%;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 @media (max-width: 768px) {
   .carousel {
@@ -353,27 +357,30 @@ footer p {
   justify-content: center;
 }
 .titulo h2 {
-  color: blanchedalmond;
+  color: white;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-size: 40px;
+  font-size: 70px;
+  font-family: "Qwitcher Grypen", cursive;
 }
 
-.temporada {
-  height: 80px;
-  width: 87.5%;
-  background: rgb(110, 110, 124);
-  background: linear-gradient(135deg, rgb(110, 110, 124) 0%, rgb(21, 23, 55) 50%, rgb(0, 0, 0) 100%);
-  margin-top: 20px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*
+.temporada{
+    height: 80px;
+    width: 87.5%;
+    background: rgb(110,110,124);
+    background: linear-gradient(135deg, rgba(110,110,124,1) 0%, rgba(21,23,55,1) 50%, rgba(0,0,0,1) 100%);
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: white;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+    }
 }
-.temporada h2 {
-  color: blanchedalmond;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-
+*/
 .contenedor-productos {
   display: flex;
   flex-wrap: wrap;

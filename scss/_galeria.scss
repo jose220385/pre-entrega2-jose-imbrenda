@@ -1,7 +1,6 @@
 .galeria {
     margin-top: 15px;
     width: 85%;
-    /*height: 800px;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 250px 250px 280px 250px;
@@ -11,7 +10,6 @@
         "azul   verde  verde    verde";
     column-gap: 15px;
     row-gap: 15px;
-    margin-bottom: 30px;
     @media(max-width:768px) {   
             display: grid;
             grid-template-columns: repeat(3, 0.7fr);
@@ -152,7 +150,11 @@
 }
 .p-index{
     font-size: 75px;
-    font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
     font-family: 'Qwitcher Grypen', cursive;
     text-shadow: 2px 2px 5px rgba(243, 68, 234, 0.5);
+    width: 85%;
+    text-align: center;
+    @media(max-width:768px) {
+        font-size: 45px;
+    } 
 }
