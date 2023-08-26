@@ -266,6 +266,13 @@ main {
   }
 }
 
+.p-index {
+  font-size: 75px;
+  font-family: "Poppins", sans-serif, "Times New Roman", Times, serif;
+  font-family: "Qwitcher Grypen", cursive;
+  text-shadow: 2px 2px 5px rgba(243, 68, 234, 0.5);
+}
+
 .carousel {
   width: 85%;
   margin-bottom: 15px;
@@ -288,6 +295,17 @@ main {
   }
 }
 
+/*
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(70,68,107,1) 0%, rgba(13,13,54,1) 23%, rgba(0,6,8,1) 100%);
+    h4{
+        color: white;
+    }
+}
+*/
 footer {
   background-color: black;
   display: flex;
